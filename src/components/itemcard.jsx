@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link,Router,Route  } from "react-router-dom";
 
-import ItemDetails from "./itemdetails";
+
 
 class ItemCard extends Component {
 
@@ -24,7 +24,7 @@ class ItemCard extends Component {
               <ul className="list-unstyled mt-3 mb-4">
                 <li>{this.props.movies.genere}</li>
               </ul>
-              <button type="button" className="btn btn-lg btn-block btn-outline-primary" ><Link className="nav-link" to={"/Movie/"+this.props.movies.id}>View Details</Link></button>
+              <button type="button" className="btn btn-lg btn-block btn-outline-primary" ><Link className="nav-link" to={"/Movie/"+this.props.movies.id} >View Details</Link></button>
               <button type="button" className="btn btn-lg btn-block btn-outline-primary">Add to Cart</button>
             </div>
           </div>

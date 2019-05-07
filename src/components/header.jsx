@@ -10,11 +10,7 @@ class Header extends Component {
       <div>
         <nav className="navbar fixed-top navbar-expand-lg bg-light">
           <Link className="navbar-brand" to="/">Home</Link>
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link className="nav-link" to="/1">Page1</Link>
-            </li>
-          </ul>
+
           <ul className="nav navbar-nav ml-auto">
             <li>
               <Link className="nav-link">My Cart</Link>

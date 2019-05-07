@@ -3,6 +3,7 @@ import ItemCard from "./itemcard";
 import axios from 'axios';
 const apiGetData = 'http://localhost:3000/Movie/v1.0/';
 
+//Displays Items from API call
 
 class DisplayItems extends Component {
 
