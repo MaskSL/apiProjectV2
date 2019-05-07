@@ -12,7 +12,7 @@ class ItemDetails extends Component {
   //Get data from api
    async componentDidMount() {
        const response = await 
-        axios.get('http://localhost:3000/Movie/v1.0//Movie/'+this.props.match.params.id);
+        axios.get('http://localhost:3000/Movie/v1.0/Movie/'+this.props.match.params.id);
         let moviesArray = response.data.map(movies => {
             return{
                 id:movies._id,
