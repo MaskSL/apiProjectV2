@@ -20,7 +20,7 @@ class ItemCard extends Component {
             <div className="card-body">
             <img src={this.props.movies.image_url} className="rounded"/>
               <p className="card-text">{this.props.movies.year}</p>
-              <p className="card-text">{this.props.movies.story}</p>
+              <p className="card-text">Avengers End Game</p>
               <ul className="list-unstyled mt-3 mb-4">
                 <li>{this.props.movies.genere}</li>
               </ul>
