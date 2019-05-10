@@ -8,7 +8,7 @@ class Header extends Component {
     return (
 
       <div>
-        <nav className="navbar fixed-top navbar-expand-lg bg-light">
+        <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-info">
           <Link className="navbar-brand" to="/">Home</Link>
 
           <ul className="nav navbar-nav ml-auto">
