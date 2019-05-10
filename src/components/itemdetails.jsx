@@ -60,40 +60,43 @@ componentDidMount() {
     render() {
         return (
             
-          <div className="container">
-            <h1 className="my-4">{this.state.name}({this.state.year})</h1>
-            <h3>Rating {this.state.rating}/5</h3>
-            <h5>Running Time - {this.state.running_time} Minutes | {this.state.genre}</h5>
+          <div className="container bg-dark">
+            <h1 className="my-4 text-white">{this.state.name}({this.state.year})</h1>
+            <h3 className="text-white">Rating {this.state.rating}/5</h3>
+            <h5 className="text-white">Running Time - {this.state.running_time} Minutes | {this.state.genre}</h5>
             <div className="row">
               <div className="col-md-8">
                 <img
                   className="img-fluid"
-                  src={this.state.image_url}
+                  src={this.image_url}
                   alt=""
                 />
               </div>
 
               <div className="col-md-4">
-                <h3 className="my-3">Story</h3>
-                <p>
-                  {this.state.story}
+                <h3 className="my-3 text-white">Story</h3>
+                <p className="text-white">
+                {this.story}
                 </p>
-                <h3 className="my-3">Directed By</h3>
-                <p>
-                  {this.state.director}
+                <h3 className="my-3 text-white">Directed By</h3>
+                <p className="text-white">
+                  {this.director}
                 </p>
-                <h3 className="my-3">Starring</h3>
-                <p>
-                  {this.state.starring}
+                <h3 className="my-3 text-white">Starring</h3>
+                <p className="text-white">
+                {this.starring}
                 </p>
-                <h3 className="my-3">Cast</h3>
-                <p>
-                  {this.state.cast}
+                <h3 className="my-3 text-white">Cast</h3>
+                <p className="text-white">
+                {this.cast}
                 </p>
-                <button type="button" className="btn btn-lg btn-block btn-outline-primary">Add to Cart</button>
+                <button type="button" className="btn btn-block btn-primary text-white ">Add to Cart</button>
               </div>
+              <hr></hr>
             </div>
+            
           </div>
+          
         );
       }
 };
