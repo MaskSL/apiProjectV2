@@ -68,7 +68,7 @@ componentDidMount() {
               <div className="col-md-8">
                 <img
                   className="img-fluid"
-                  src={this.image_url}
+                  src={this.state.image_url}
                   alt=""
                 />
               </div>
@@ -76,19 +76,19 @@ componentDidMount() {
               <div className="col-md-4">
                 <h3 className="my-3 text-white">Story</h3>
                 <p className="text-white">
-                {this.story}
+                {this.state.story}
                 </p>
                 <h3 className="my-3 text-white">Directed By</h3>
                 <p className="text-white">
-                  {this.director}
+                  {this.state.director}
                 </p>
                 <h3 className="my-3 text-white">Starring</h3>
                 <p className="text-white">
-                {this.starring}
+                {this.state.starring}
                 </p>
                 <h3 className="my-3 text-white">Cast</h3>
                 <p className="text-white">
-                {this.cast}
+                {this.state.cast}
                 </p>
                 <button type="button" className="btn btn-block btn-primary text-white ">Add to Cart</button>
               </div>
